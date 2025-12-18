@@ -3,23 +3,164 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-   
+    <title>许久不见 甚是想念</title>
+    <style>
+        /* 全局怀旧风格样式 */
+        body {
+            background-color: #f8f5f0; /* 复古米白背景 */
+            font-family: "Microsoft Yahei", sans-serif;
+            padding-bottom: 50px;
+        }
+        /* 标题区域 */
+        .title-wrap {
+            text-align: center;
+            padding: 3vh 0;
+            border-bottom: 1px solid #e0d8c8;
+            margin-bottom: 3vh;
+        }
+        .title {
+            font-weight: 400;
+            color: #5a4b38; /* 复古棕色调 */
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .subtitle {
+            color: #8a7d6b;
+            font-size: 1rem;
+            margin-top: 1vh;
+        }
+        /* 老照片样式 */
+        .photo-wrap {
+            display: flex;
+            justify-content: center;
+            margin: 4vh 0;
+        }
+        .memorial-photo {
+            width: 60vw; /* 放大照片更显眼 */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            /* 老照片滤镜 */
+            filter: sepia(20%) contrast(95%) brightness(90%);
+            border: 8px solid white;
+        }
+        /* 回忆文案区域 */
+        .memorial-text {
+            width: 85vw;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #4a3f2e;
+            font-size: 1rem;
+            background-color: white;
+            padding: 3vh 4vw;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        /* 时间轴样式 */
+        .timeline {
+            width: 85vw;
+            margin: 5vh auto 0;
+        }
+        .timeline-item {
+            display: flex;
+            margin-bottom: 3vh;
+            align-items: flex-start;
+        }
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #c8b69c;
+            border-radius: 50%;
+            margin-right: 2vw;
+            margin-top: 0.5vh;
+            flex-shrink: 0;
+        }
+        .timeline-content {
+            flex: 1;
+        }
+        .timeline-time {
+            color: #9a8c78;
+            font-size: 0.9rem;
+            margin-bottom: 0.5vh;
+        }
+        .timeline-text {
+            color: #5a4b38;
+            line-height: 1.6;
+        }
+        /* 底部寄语 */
+        .footer-note {
+            text-align: center;
+            margin-top: 6vh;
+            color: #7a6c58;
+            font-style: italic;
+            font-size: 1rem;
+            padding: 0 5vw;
+        }
+    </style>
 </head>
 
-<body style="background-color: white;">
-	<div id="" style="display: flex;justify-content: center;margin-top: 2vh;">
-		<h2 style="font-weight: 500;">许久不见 盛是想念</h2>
-	</div>
-	<div id="">
-		<img src="img/9465580e367b251949cb82902d4bf3a4.jpg" style="width: 10vw;">
-	</div>
-	
-	<script src="js/mui.min.js"></script>
-	<link href="css/mui.min.css" rel="stylesheet"/>
-	<script type="text/javascript" charset="utf-8">
-	  	mui.init();
-	</script>
-	
+<body>
+    <!-- 标题区域 -->
+    <div class="title-wrap">
+        <h2 class="title">许久不见 甚是想念</h2>
+        <p class="subtitle">那些一起走过的时光，从未被遗忘</p>
+    </div>
+
+    <!-- 老照片区域 -->
+    <div class="photo-wrap">
+        <img src="img/9465580e367b251949cb82902d4bf3a4.jpg" class="memorial-photo" alt="旧时光" style="width: 20vw;">
+    </div>
+
+    <!-- 回忆文案 -->
+    <div class="memorial-text">
+        总在某个不经意的瞬间，想起从前的日子。那时的天好像更蓝，日子好像更慢，我们并肩走过的街巷、聊到深夜的话题，都成了心底最柔软的珍藏。
+        <br><br>
+       那些一起笑、一起闹的时光，从未褪色。许久不见，却从未忘记，若是再见也别无所念 我只是想见见你。
+    </div>
+
+    <!-- 回忆时间轴 -->
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-time">那年初夏</div>
+                <div class="timeline-text">炙热的心，盖过一切喧嚣的真挚，月光下也有的身影</div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-time">结束那天</div>
+                <div class="timeline-text">狠心却不敢再有所想，在转身时红了眼，害怕结束了又怕不够狠心，只是幼稚</div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-time">某个深夜</div>
+                <div class="timeline-text">翻到旧照片，突然想起你的模样，才发现，原来想念早已刻进日常</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部寄语 -->
+    <div class="footer-note">
+        若思念已在许久 且念且忘<br>
+        见字如面
+    </div>
+
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+        
+        // 给照片添加轻触动效（移动端）
+        document.querySelector('.memorial-photo').addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+            this.style.transition = 'transform 0.2s';
+        });
+        document.querySelector('.memorial-photo').addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
 </body>
 </html>
